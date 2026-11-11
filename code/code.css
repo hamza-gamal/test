@@ -1,0 +1,43 @@
+/* ---------------------------- code to Audio ---------------------------- */
+.navAudio {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #141414; 
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #252525;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.navAudio:hover {
+    background: #1a1a1a;
+    border-color: #444;
+    transform: scale(1.08);
+}
+
+.navAudio span {
+    font-size: 14px;
+    user-select: none;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.12); filter: drop-shadow(0 0 4px #4a4a4a); }
+    100% { transform: scale(1); }
+}
+
+.audio-playing {
+    animation: pulse 1.5s infinite ease-in-out;
+    border-color: #555 !important;
+    background: #222 !important;
+}
+
+
+
+/* ---------------------------- code to form ---------------------------- */
+
+/* none 📍*/
